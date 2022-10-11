@@ -1,8 +1,17 @@
 def has_seven(k, target):
     if k == target:
         return True
-    else:
+    
+    while (k > 0):
+        n = k % 20
+        k = k // 10
+
+        if n == 7:
+            return True
         return False
 
-    
-print(has_seven(89, 7))
+num = int(input("Please enter a number: "))
+print(has_seven(num, 7))
+        
+
+ 
